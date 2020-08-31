@@ -157,7 +157,7 @@
             // calculateButton
             // 
             this.calculateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.calculateButton.Location = new System.Drawing.Point(302, 320);
+            this.calculateButton.Location = new System.Drawing.Point(304, 334);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
             this.calculateButton.TabIndex = 12;
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 355);
+            this.ClientSize = new System.Drawing.Size(391, 369);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -182,6 +182,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(500, 500);
+            this.MinimumSize = new System.Drawing.Size(407, 407);
             this.Name = "MainForm";
             this.Text = "Ввод данных";
             this.ResumeLayout(false);

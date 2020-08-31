@@ -29,33 +29,37 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.graphicBuildButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
             // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 13);
+            this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(398, 290);
+            this.listBox1.Size = new System.Drawing.Size(302, 342);
             this.listBox1.TabIndex = 0;
             // 
-            // button1
+            // graphicBuildButton
             // 
-            this.button1.Location = new System.Drawing.Point(149, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.graphicBuildButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.graphicBuildButton.Location = new System.Drawing.Point(146, 346);
+            this.graphicBuildButton.Name = "graphicBuildButton";
+            this.graphicBuildButton.Size = new System.Drawing.Size(144, 23);
+            this.graphicBuildButton.TabIndex = 1;
+            this.graphicBuildButton.Text = "Построить график";
+            this.graphicBuildButton.UseVisualStyleBackColor = true;
             // 
             // OutputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 432);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(302, 381);
+            this.Controls.Add(this.graphicBuildButton);
             this.Controls.Add(this.listBox1);
+            this.MaximumSize = new System.Drawing.Size(496, 587);
+            this.MinimumSize = new System.Drawing.Size(318, 419);
             this.Name = "OutputForm";
             this.Text = "Вывод данных";
             this.ResumeLayout(false);
@@ -65,6 +69,6 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button graphicBuildButton;
     }
 }
