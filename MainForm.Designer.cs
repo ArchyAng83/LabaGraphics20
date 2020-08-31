@@ -163,6 +163,7 @@
             this.calculateButton.TabIndex = 12;
             this.calculateButton.Text = "Расчитать";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // MainForm
             // 

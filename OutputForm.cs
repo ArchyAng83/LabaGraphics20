@@ -16,5 +16,10 @@ namespace LabaGraphics20
         {
             InitializeComponent();
         }
+
+        private void OutputForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

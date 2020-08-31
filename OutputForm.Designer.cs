@@ -62,6 +62,7 @@
             this.MinimumSize = new System.Drawing.Size(318, 419);
             this.Name = "OutputForm";
             this.Text = "Вывод данных";
+            this.Load += new System.EventHandler(this.OutputForm_Load);
             this.ResumeLayout(false);
 
         }
