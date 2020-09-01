@@ -120,13 +120,14 @@
             // 
             this.stepComboBox.FormattingEnabled = true;
             this.stepComboBox.Items.AddRange(new object[] {
-            "0.0001",
-            "0.005",
-            "0.01",
-            "0.5",
+            "0,0001",
+            "0,005",
+            "0,001",
+            "0,05",
+            "0,01",
+            "0,5",
             "1",
-            "5",
-            "10"});
+            "5"});
             this.stepComboBox.Location = new System.Drawing.Point(67, 107);
             this.stepComboBox.Name = "stepComboBox";
             this.stepComboBox.Size = new System.Drawing.Size(100, 21);
@@ -157,6 +158,7 @@
             // calculateButton
             // 
             this.calculateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.calculateButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.calculateButton.Location = new System.Drawing.Point(304, 334);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);

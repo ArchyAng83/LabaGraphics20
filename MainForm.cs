@@ -18,12 +18,13 @@ namespace LabaGraphics20
         public double ConstA { get; private set; }
         public double ConstB { get; private set; }
         public int Count { get; private set; }
-        public bool isSelectFuncOne { get; private set; }
-        public bool isSelectFuncTwo { get; private set; }
+        public bool IsSelectFuncOne { get; private set; }
+        public bool IsSelectFuncTwo { get; private set; }
 
         public MainForm()
         {
             InitializeComponent();
+            calculateButton.DialogResult = DialogResult.OK;
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -59,12 +60,27 @@ namespace LabaGraphics20
 
             if (radioButton1.Checked)
             {
-                isSelectFuncOne = true;
+                IsSelectFuncOne = true;
             }
             if (radioButton2.Checked)
             {
-                isSelectFuncTwo = true;
+                IsSelectFuncTwo = true;
             }
+
+            Count = (int)((Math.Abs(Xkon - Xnach)) / Step) + 1;
+
+            OutputForm outputForm = new OutputForm
+            {
+                Xnach = Xnach,
+                Xkon = Xkon,
+                Step = Step,
+                ConstA = ConstA,
+                ConstB = ConstB,
+                Count = Count,
+                IsSelectFuncOne = IsSelectFuncOne,
+                IsSelectFuncTwo = IsSelectFuncTwo
+            };
+            outputForm.ShowDialog();
         }
     }
 }
