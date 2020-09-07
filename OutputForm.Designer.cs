@@ -50,6 +50,7 @@
             this.graphicBuildButton.TabIndex = 1;
             this.graphicBuildButton.Text = "Построить график";
             this.graphicBuildButton.UseVisualStyleBackColor = true;
+            this.graphicBuildButton.Click += new System.EventHandler(this.graphicBuildButton_Click);
             // 
             // OutputForm
             // 

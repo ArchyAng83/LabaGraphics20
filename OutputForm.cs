@@ -78,5 +78,10 @@ namespace LabaGraphics20
                 listBox1.Items.Add(xItemsList[i].ToString() + "\t" + yItemsList[i].ToString());
             }
         }
+
+        private void graphicBuildButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

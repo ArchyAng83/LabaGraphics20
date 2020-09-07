@@ -24,7 +24,7 @@ namespace LabaGraphics20
         public MainForm()
         {
             InitializeComponent();
-            calculateButton.DialogResult = DialogResult.OK;
+            
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -81,6 +81,19 @@ namespace LabaGraphics20
                 IsSelectFuncTwo = IsSelectFuncTwo
             };
             outputForm.ShowDialog();
+
+            GraphicsForm graphics = new GraphicsForm()
+            {
+                Xnach = Xnach,
+                Xkon = Xkon,
+                Step = Step,
+                ConstA = ConstA,
+                ConstB = ConstB,
+                Count = Count,
+                IsSelectFuncOne = IsSelectFuncOne,
+                IsSelectFuncTwo = IsSelectFuncTwo
+            };
+            graphics.ShowDialog();
         }
     }
 }
